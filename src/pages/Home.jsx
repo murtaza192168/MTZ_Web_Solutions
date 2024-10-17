@@ -7,6 +7,8 @@ function Home() {
   return (
     <div className="home-container">
       {/* Hero Section */}
+        
+
       <section className="hero-section d-flex align-items-center">
         <div className="container text-center">
           <h1 className="display-4 text-white">Welcome to My Portfolio</h1>

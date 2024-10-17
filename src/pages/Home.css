@@ -3,8 +3,10 @@
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('your-hero-image.jpg') center center/cover no-repeat;
+   background: url('/src/assets/home/hero_left_bg.png') center center/cover no-repeat;
     height: 100vh;
+     /* background-size: contain; */
+     /* object-fit: cover; */
   }
   
   .hero-section h1 {
