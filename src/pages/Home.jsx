@@ -1,25 +1,26 @@
 // src/pages/Home.jsx
 
 import { Link } from 'react-router-dom';
-import './Home.css';  // We will add custom CSS here
+import './Home.css';  // Custom CSS for additional styles
 
 function Home() {
   return (
     <div className="home-container">
       {/* Hero Section */}
-        
-
-      <section className="hero-section d-flex align-items-center">
-        <div className="container text-center">
-          <h1 className="display-4 text-white">Welcome to My Portfolio</h1>
-          <p className="lead text-white-50">Showcasing my skills and projects</p>
-          <Link to="/projects" className="btn btn-primary btn-lg mx-2">View Projects</Link>
-          <Link to="/skills" className="btn btn-outline-light btn-lg mx-2">See My Skills</Link>
+      <section className="hero-section d-flex">
+        <div className="left-section d-flex align-items-center">
+          <div className="container text-center text-white">
+            <h1 className="display-4">Welcome to My Portfolio</h1>
+            <p className="lead">Showcasing my skills and projects</p>
+            <Link to="/projects" className="btn btn-primary btn-lg mx-2">View Projects</Link>
+            <Link to="/skills" className="btn btn-outline-light btn-lg mx-2">See My Skills</Link>
+          </div>
         </div>
+        <div className="right-section"></div>
       </section>
 
       {/* About Section */}
-      <section className="about-section py-5">
+      <section className="about-section full-section py-5">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6">
@@ -35,7 +36,7 @@ function Home() {
       </section>
 
       {/* Skills Preview Section */}
-      <section className="skills-preview-section py-5 bg-light">
+      <section className="skills-preview-section full-section py-5 bg-light">
         <div className="container">
           <h2 className="text-center mb-4">My Skills</h2>
           <div className="row text-center">
@@ -59,7 +60,7 @@ function Home() {
       </section>
 
       {/* Projects Preview Section */}
-      <section className="projects-preview-section py-5">
+      <section className="projects-preview-section full-section py-5">
         <div className="container">
           <h2 className="text-center mb-4">Featured Projects</h2>
           <div className="row">

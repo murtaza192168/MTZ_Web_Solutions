@@ -1,21 +1,28 @@
-/* Custome css for Unique designs */
+/* Custom css for Unique designs */
 /* src/pages/Home.css */
 
-/* Hero Section */
+/* Hero Section (full viewport height, background spanning width) */
 .hero-section {
-   background: url('/src/assets/home/hero_left_bg.png') center center/cover no-repeat;
-    height: 100vh;
-     /* background-size: contain; */
-     /* object-fit: cover; */
+    background: url('/src/assets/home/hero_bg.png') center center/cover no-repeat;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Vertically centers the content */
+    align-items: center; /* Horizontally centers the content */
+    text-align: center; /* Center text content */
+    width: 100vw; /* Full viewport width */
+    padding: 0 20px; /* Adds a bit of padding for smaller devices */
   }
   
   .hero-section h1 {
     font-size: 3.5rem;
     font-weight: bold;
+    color: white;
   }
   
   .hero-section p {
     font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.75); /* Light white color */
   }
   
   .btn-primary {
@@ -30,6 +37,12 @@
     padding: 0.75rem 1.25rem;
   }
   
+  /* About Section (auto height based on content) */
+  .about-section {
+    min-height: auto; /* Adjusts height according to content */
+    padding: 60px 0;
+  }
+  
   .about-section h2 {
     font-size: 2rem;
   }
@@ -39,7 +52,23 @@
     border-radius: 8px;
   }
   
-  .skills-preview-section h2, .projects-preview-section h2 {
+  /* Skills Preview Section (auto height based on content) */
+  .skills-preview-section {
+    min-height: auto; /* Adjusts height according to content */
+    padding: 60px 0;
+  }
+  
+  .skills-preview-section h2 {
+    font-size: 2.25rem;
+  }
+  
+  /* Projects Preview Section (auto height based on content) */
+  .projects-preview-section {
+    min-height: auto; /* Adjusts height according to content */
+    padding: 60px 0;
+  }
+  
+  .projects-preview-section h2 {
     font-size: 2.25rem;
   }
   
@@ -48,4 +77,18 @@
     object-fit: cover;
   }
   
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-section p {
+      font-size: 1rem;
+    }
+  
+    .btn-primary, .btn-outline-light {
+      padding: 0.6rem 1rem;
+    }
+  }
   
