@@ -1,4 +1,5 @@
 // src/main.jsx
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // This includes Popper.js
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
